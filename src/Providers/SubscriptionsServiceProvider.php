@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Rinvex\Subscriptions\Providers;
+namespace Encore\Subscriptions\Providers;
 
-use Rinvex\Subscriptions\Models\Plan;
+use Encore\Subscriptions\Models\Plan;
 use Illuminate\Support\ServiceProvider;
-use Rinvex\Support\Traits\ConsoleTools;
-use Rinvex\Subscriptions\Models\PlanFeature;
-use Rinvex\Subscriptions\Models\PlanSubscription;
-use Rinvex\Subscriptions\Models\PlanSubscriptionUsage;
-use Rinvex\Subscriptions\Console\Commands\MigrateCommand;
-use Rinvex\Subscriptions\Console\Commands\PublishCommand;
-use Rinvex\Subscriptions\Console\Commands\RollbackCommand;
+use Encore\Support\Traits\ConsoleTools;
+use Encore\Subscriptions\Models\PlanFeature;
+use Encore\Subscriptions\Models\PlanSubscription;
+use Encore\Subscriptions\Models\PlanSubscriptionUsage;
+use Encore\Subscriptions\Console\Commands\MigrateCommand;
+use Encore\Subscriptions\Console\Commands\PublishCommand;
+use Encore\Subscriptions\Console\Commands\RollbackCommand;
 
 class SubscriptionsServiceProvider extends ServiceProvider
 {
