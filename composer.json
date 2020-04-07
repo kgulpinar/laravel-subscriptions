@@ -1,6 +1,6 @@
 {
-    "name": "rinvex/laravel-subscriptions",
-    "description": "Rinvex Subscriptions is a flexible plans and subscription management system for Laravel, with the required tools to run your SAAS like services efficiently. It's simple architecture, accompanied by powerful underlying to afford solid platform for your business.",
+    "name": "kgulpinar/laravel-admin-subscriptions",
+    "description": "Subscriptions is a flexible plans and subscription management system ( for SAAS ) for Laravel Admin",
     "type": "library",
     "keywords": [
         "plan",
@@ -9,17 +9,23 @@
         "feature",
         "database",
         "recurring",
-        "subscription"
+        "subscription",
+        "laravel-admin"
     ],
     "license": "MIT",
-    "homepage": "https://rinvex.com",
+    "homepage": "https://kgulpinar.org",
     "support": {
-        "email": "help@rinvex.com",
+        "email": "koraygulpinar@gmail.com",
         "issues": "https://github.com/rinvex/laravel-subscriptions/issues",
         "source": "https://github.com/rinvex/laravel-subscriptions",
-        "docs": "https://github.com/rinvex/laravel-subscriptions/blob/master/README.md"
+        "docs": "https://github.com/kgulpinar/laravel-subscriptions/blob/master/README.md"
     },
     "authors": [
+        {
+            "name": "Koray Gulpinar",
+            "homepage": "https://koray.org",
+            "email": "kgulpinar@gmail.com"
+        },
         {
             "name": "Rinvex LLC",
             "homepage": "https://rinvex.com",
@@ -45,7 +51,8 @@
         "rinvex/laravel-support": "^4.0.0",
         "spatie/eloquent-sortable": "^3.7.0",
         "spatie/laravel-sluggable": "^2.2.0",
-        "spatie/laravel-translatable": "^4.2.0"
+        "spatie/laravel-translatable": "^4.2.0",
+        "encore/laravel-admin": ">=1.6"
     },
     "require-dev": {
         "codedungeon/phpunit-result-printer": "^0.27.0",
@@ -76,7 +83,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Rinvex\\Subscriptions\\Providers\\SubscriptionsServiceProvider"
+                "Encore\\Subscriptions\\Providers\\SubscriptionsServiceProvider"
             ]
         }
     },
